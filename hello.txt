@@ -1,0 +1,2 @@
+Hello Phase 1
+Learning Git workflows
