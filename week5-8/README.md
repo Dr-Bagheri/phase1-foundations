@@ -160,32 +160,31 @@ import torch.nn.functional as F
 
 def scaled\_dot\_product\_attention(Q, K, V, mask=None):
 
-&#x20;   d\_k = Q.size(-1)
+   d\_k = Q.size(-1)
 
-&#x20;   
+   
 
-&#x20;   scores = torch.matmul(Q, K.transpose(-2, -1))
+   scores = torch.matmul(Q, K.transpose(-2, -1))
 
-&#x20;   scores = scores / torch.sqrt(torch.tensor(d\_k, dtype=torch.float32))
-
-
-
-&#x20;   if mask is not None:
-
-&#x20;       scores = scores.masked\_fill(mask == 0, float('-inf'))
+   scores = scores / torch.sqrt(torch.tensor(d\_k, dtype=torch.float32))
 
 
 
-&#x20;   attention\_weights = F.softmax(scores, dim=-1)
-
-&#x20;   output = torch.matmul(attention\_weights, V)
-
-
-
-&#x20;   return output, attention\_weights
+   if mask is not None:
+   scores = scores.masked\_fill(mask == 0, float('-inf'))
 
 
 
+   attention\_weights = F.softmax(scores, dim=-1)
+
+   output = torch.matmul(attention\_weights, V)
+
+
+
+   return output, attention\_weights
+
+
+```
 
 
 
