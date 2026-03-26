@@ -1,8 +1,8 @@
-\# 🧠 Understanding the Transformer Architecture (From Intuition to Code)
+\#  Understanding the Transformer Architecture (From Intuition to Code)
 
 
 
-\## 🚀 Why Transformers Matter
+\##  Why Transformers Matter
 
 
 
@@ -22,7 +22,7 @@ This shift is what made Large Language Models (LLMs) powerful.
 
 
 
-\## 🧩 The Big Picture: Transformer Architecture
+\##  The Big Picture: Transformer Architecture
 
 
 
@@ -62,7 +62,7 @@ Each layer contains:
 
 
 
-\## 🔑 Core Idea: Self-Attention
+\##  Core Idea: Self-Attention
 
 
 
@@ -78,7 +78,7 @@ Self-attention lets each word ask:
 
 
 
-\## 🔢 The Attention Formula
+\##  The Attention Formula
 
 
 
@@ -102,7 +102,7 @@ Where:
 
 
 
-\## 🔍 How It Works (Step-by-Step)
+\##  How It Works (Step-by-Step)
 
 
 
@@ -146,7 +146,7 @@ Combine values using attention weights
 
 
 
-\## 🧪 Code: Scaled Dot-Product Attention (From Scratch)
+\##  Code: Scaled Dot-Product Attention (From Scratch)
 
 
 
@@ -191,7 +191,7 @@ def scaled\_dot\_product\_attention(Q, K, V, mask=None):
 
 
 
-\##🧠 Why Scaling Matters
+\## Why Scaling Matters
 
 
 
@@ -207,11 +207,11 @@ Gradients vanish
 
 
 
-\##👉 Scaling stabilizes training
+\## Scaling stabilizes training
 
 
 
-\##🧩 Multi-Head Attention
+\## Multi-Head Attention
 
 
 
@@ -229,7 +229,7 @@ Coreference (“it” → “cat”)
 
 Long-range dependencies
 
-\##📍 Positional Encoding
+\## Positional Encoding
 
 
 
@@ -245,7 +245,7 @@ Solution: add positional encodings using sine/cosine functions.
 
 
 
-\##🧪 Visualizing Attention
+\## Visualizing Attention
 
 
 
@@ -257,7 +257,7 @@ Example Sentence
 
 The cat sat on the mat because it was tired.
 
-\##🔍 Observations
+\## Observations
 
 1\. Syntax
 
